@@ -1,6 +1,6 @@
 package com.souvik.mvvmexample.commands;
 
-public interface userLogin {
+public interface UserLogin {
 
     public void onClickLogin();
 

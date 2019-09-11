@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.souvik.mvvmexample.commands.userLogin;
+import com.souvik.mvvmexample.commands.UserLogin;
 import com.souvik.mvvmexample.databinding.ActivityMainBinding;
 import com.souvik.mvvmexample.model.User;
 import com.souvik.mvvmexample.viewmodel.Usermodel;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Usermodel usermodel = new Usermodel(new User("Email", "Password"));
         activityMainBinding.setLogin(usermodel);
 
-        activityMainBinding.setUserloginevent(new userLogin() {
+        activityMainBinding.setUserloginevent(new UserLogin() {
             @Override
             public void onClickLogin() {
                 Toast.makeText(MainActivity.this, activityMainBinding.getLogin().getEmail(), Toast.LENGTH_SHORT).show();

@@ -9,7 +9,7 @@
             type="com.souvik.mvvmexample.viewmodel.Usermodel" />
         <variable
             name="userloginevent"
-            type="com.souvik.mvvmexample.commands.userLogin" />
+            type="com.souvik.mvvmexample.commands.UserLogin" />
     </data>
 
 <LinearLayout
